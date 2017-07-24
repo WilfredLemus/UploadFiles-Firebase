@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col s4">
+    <app-upload-form></app-upload-form>
+  </div>
+
+  <div class="col s8">
+    <div class="row">
+      <h3>File Uploads</h3>
+
+      <div *ngFor="let upload of uploads | async">
+        <div class="col s12 m4">
+          <app-upload-detail [upload]='upload'></app-upload-detail>
+        </div>
+      </div>
+
+      <div *ngIf="showSpinner">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
