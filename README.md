@@ -34,4 +34,4 @@ Comming soon..
 
 ## Screenshot
 
-<img src="screenshot/screen1.png" width="120" />
+<img src="screenshot/screen1.png"  />
